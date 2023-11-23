@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+  "name": "t4cb",
+  "version-string": "0.0.1",
+  "builtin-baseline": "0c20b2a97c390e106150837042d921b0939e7ecb",
+  "dependencies": [
+    {
+      "name": "fmt",
+      "version>=": "10.0.0"
+    },
+    {
+      "name": "sfml",
+      "version>=": "2.6.1"
+    },
+    {
+      "name": "imgui",
+      "version>=": "1.89.7"
+    },
+    {
+      "name": "imgui-sfml",
+      "version>=": "2.5"
+    }
+  ],
+  "features": {
+    "tests": {
+      "description": "Build the tests of the package's tests",
+      "dependencies": [
+        {
+          "name": "catch2",
+          "version>=": "3.3.2"
+        }
+      ]
+    }
+  }
+}
